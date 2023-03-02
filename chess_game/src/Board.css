@@ -2,8 +2,8 @@
   width: 90%;
   aspect-ratio: 1 / 1;
   display: grid;
-  grid-template-columns: repeat(8, 12%);
-  gap: 2px;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5%;
   margin: 5% auto auto;
 }
 

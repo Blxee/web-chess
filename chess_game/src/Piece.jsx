@@ -1,6 +1,17 @@
+import './Piece.css';
 
-export default function Piece({ type }) {
+const PieceTypes = {
+  King: { White: '♔', Black: '♚' },
+  Queen: { White: '♕', Black: '♛' },
+  Bishop: { White: '♗', Black: '♝' },
+  Knight: { White: '♘', Black: '♞' },
+  Rook: { White: '♖', Black: '♜' },
+  Pawn: { White: '♙', Black: '♟' },
+}
+
+export default function Piece({ type, color }) {
+
   return (
-    <h1>K</h1>
+    <div className='piece'>{PieceTypes[type][color]}</div>
   );
 }

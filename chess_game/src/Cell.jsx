@@ -1,10 +1,11 @@
 import './Cell.css';
 import Piece from './Piece';
 
-export default function Board({ x }) {
+export default function Cell({ isWhite, piece }) {
+
   return (
-    <div className='cell' style={{ backgroundColor: x % 2 === 0 ? 'crimson' : 'cyan' }}>
-      <Piece type='wawa' />
+    <div className='cell' style={{ backgroundColor: isWhite ? 'var(--primary-color)' : 'var(--secondary-color)' }}>
+      {piece}
     </div>
   )
 }
